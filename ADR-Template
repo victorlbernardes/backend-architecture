@@ -1,0 +1,33 @@
+
+# ADR [Número] - [Título da Decisão]
+
+## Status
+Proposed / Accepted / Deprecated
+
+## Contexto
+<!-- Explique o problema ou situação que exige uma decisão arquitetural -->
+Exemplo: O sistema de reservas precisa responder rapidamente durante picos de acesso, mas não há infraestrutura de cache distribuído ainda.
+
+## Decisão
+<!-- Qual foi a decisão tomada -->
+Exemplo: Implementar cache in-memory no serviço de reservas para reduzir latência em endpoints críticos.
+
+## Alternativas Consideradas
+1. **Cache distribuído** – Maior consistência e escalabilidade, mas complexidade e custo mais altos.
+2. **Não usar cache** – Simples, mas alto tempo de resposta sob carga.
+3. **Cache in-memory** – Equilíbrio entre simplicidade e ganho de performance imediato.
+
+## Consequências
+- **Positivas:** Latência reduzida, implementação rápida, fácil manutenção.
+- **Negativas:** Consistência eventual, dados podem ficar desatualizados momentaneamente, não escala horizontal sem ajustes adicionais.
+
+## Métricas / Observabilidade
+- Latência p95 antes/depois: 450ms → 120ms
+- Taxa de erro: 2% → 0.5%
+- Throughput: 100 req/s → 120 req/s
+
+## Referências
+- Issue relacionada: #[Número da Issue]
+- Documentação interna: [link]
+- Pull Request associado: #[Número do PR]
+------------------------------------------------------------------------
