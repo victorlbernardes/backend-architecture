@@ -527,22 +527,6 @@ Consolidar todo o aprendizado das semanas anteriores, permitindo que cada grupo:
 
 ---
 
-## 📊 Métricas e Observabilidade
-
-Cada grupo deve apresentar **evidências quantitativas e qualitativas** das mudanças anteriores, mesmo que não implementadas nesta semana:
-
-| Métrica | Antes | Depois | Observações |
-|---------|-------|--------|-------------|
-| Latência p50/p95/p99 |  |  |  |
-| Throughput (req/s) |  |  |  |
-| Taxa de erro (%) |  |  |  |
-| Uso de CPU / Memória |  |  |  |
-| Tempo de resposta por endpoint |  |  |  |
-
-💡 **Dica:** Vincule métricas à decisão arquitetural e ao desenho do sistema.
-
----
-
 ## 📝 Entregáveis por Grupo
 
 1. **Arquitetura completa em desenho/diagramas** (diagrama de componentes, fluxos, integrações)  
