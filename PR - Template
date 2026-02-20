@@ -1,0 +1,47 @@
+
+# 📝 Pull Request - Semana [N] - [Nome do Case]
+
+## 🔥 Problema
+<!-- Descreva brevemente o problema que este PR resolve -->
+Exemplo: Latência alta em endpoints críticos durante picos de tráfego.
+
+## 🎯 Objetivos do PR
+- Implementar [feature/refatoração]
+- Garantir observabilidade mínima (logs/métricas)
+- Documentar decisão arquitetural
+
+## 💻 Alterações Realizadas
+- [ ] Endpoint `/reservas` otimizado
+- [ ] Implementado cache estratégico
+- [ ] Logs estruturados adicionados
+- [ ] Métricas de latência coletadas
+
+## 📊 Métricas / Observabilidade
+| Métrica | Antes | Depois | Observações |
+|---------|-------|--------|-------------|
+| Latência p95 | 450ms | 120ms | Redução significativa após cache |
+| Taxa de erro | 2% | 0.5% | Falha em endpoints críticos mitigada |
+| Throughput | 100 req/s | 120 req/s | Ganho leve de performance |
+
+## ⚖ Trade-offs e Decisões Arquiteturais
+- Escolha: Cache in-memory vs Cache distribuído
+- Motivo: Simplicidade na fase inicial
+- Impacto: Consistência eventual, ganho de performance imediato
+- Referência ADR: [link para arquivo ADR se aplicável]
+
+## 🧪 Testes Realizados
+- [ ] Testes unitários cobrindo 95% do código
+- [ ] Testes de integração nos endpoints alterados
+- [ ] Testes de carga simulando 50k usuários
+
+## ❓ Pontos para Debate / Feedback
+- Alternativa a cache distribuído valeria o esforço nesta fase?
+- Melhor abordagem para logs estruturados?
+- Como medir impacto real em produção?
+
+## 📎 Referências
+- ADR: `docs/adr/adr-[semana]-[case].md`
+- Documentação interna: [link]
+- Issue relacionada: #[Número da Issue]
+
+---
